@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch Pro - E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>TechStore</h1>
+            <ul>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#purchase">Buy Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product">
+        <div class="container">
+            <div class="product-hero">
+                <div class="product-images">
+                    <img src="smartproimg.jpg" alt="SmartWatch Pro" class="main-image"> 
+                    <div class="thumbnail-images">
+                        <img src="T1.jpg" alt="Thumbnail 1">
+                        <img src="T2.jpg" alt="Thumbnail 2">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h2>SmartWatch Pro</h2>
+                    <p class="price">$299.99</p>
+                    <p class="description">Track your fitness, receive notifications, and stay connected with this sleek smartwatch.</p>
+                    <ul class="features">
+                        <li>Heart rate monitor</li>
+                        <li>GPS tracking</li>
+                        <li>Water-resistant</li>
+                        <li>7-day battery life</li>
+                    </ul>
+                    <a href="#purchase" class="buy-button">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review">
+                    <p>"Amazing watch! Great battery life and features."</p>
+                    <span>- Alex J.</span>
+                </div>
+                <div class="review">
+                    <p>"Stylish and functional. Highly recommend!"</p>
+                    <span>- Maria K.</span>
+                </div>
+                <div class="review">
+                    <p>"Easy to use, perfect for workouts."</p>
+                    <span>- Tom R.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="purchase">
+        <div class="container">
+            <h2>Purchase Details</h2>
+            <form action="#" method="post">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="black">Black</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 TechStore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
