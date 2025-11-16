@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osmosis Infobyte - Level 1 Projects</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+ body {
+        background: linear-gradient(135deg, #000000, #1c1c1c);
+        color: #fff;
+        overflow-x: hidden;
+    }
+header {
+        text-align: center;
+        padding: 60px 20px;
+        animation: fadeIn 1.5s ease forwards;
+    }
+ header h1 {
+        font-size: 45px;
+        font-weight: 700;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+ .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 50px;
+    }
+.card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        transition: 0.3s ease;
+        animation: slideUp 1s ease forwards;
+    }
+.card:hover {
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+.card h2 {
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+.card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #ff8a00;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+ .card a:hover {
+        background: #e52e71;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+</head>
+<body><header>
+    <h1>Osmosis Infobyte Internship</h1>
+    <p>Web Development & Designing — Level 1 Projects</p>
+</header>
+
+<section class="projects">
+
+    <div class="card">
+        <h2>Landing Page</h2>
+        <p>Task1: Creative and Responsive Landing Page.</p>
+        <a href="Landing Page/">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>Portfolio Website</h2>
+        <p>Task2: Showcasing skills, work and creativity.</p>
+        <a href="Portfolio/">View Project</a>
+    </div>
+
+    <div class="card">
+        <h2>Temperature Converter</h2>
+        <p>Task3: Convert Celsius, Fahrenheit and Kelvin easily.</p>
+        <a href="Temprature Converter/">View Project</a>
+    </div>
+
+</section>
+
+</body>
+</html>
